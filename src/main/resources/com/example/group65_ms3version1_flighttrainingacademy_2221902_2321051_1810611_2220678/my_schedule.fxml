@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightinstructor65.MySchedule">
+    <children>
+        <TableView fx:id="scheduleTableView" layoutX="17.0" layoutY="53.0" prefHeight="200.0" prefWidth="518.0">
+            <columns>
+                <TableColumn fx:id="flightDateCo" prefWidth="75.0" text="Flight Date" />
+                <TableColumn fx:id="flightTimeCo" prefWidth="75.0" text="Flight Time" />
+                <TableColumn fx:id="instructorNameCo" prefWidth="96.80000305175781" text="Instructor Name" />
+                <TableColumn fx:id="sessionTypeCo" prefWidth="80.00006103515625" text="Session Type" />
+                <TableColumn fx:id="trainingLocationCo" prefWidth="80.79998779296875" text="Aircraft Type" />
+                <TableColumn fx:id="traininglocationCo" prefWidth="107.20001220703125" text="Training Location" />
+            </columns>
+        </TableView>
+        <Button layoutX="510.0" layoutY="287.0" mnemonicParsing="false" onAction="#refreshOnClick" text="Refresh" />
+    </children>
+</AnchorPane>

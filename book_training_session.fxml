@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightinstructor65.BookTrainingSession">
+   <children>
+      <ComboBox fx:id="sessionTypeCombobox" layoutX="150.0" layoutY="44.0" prefWidth="150.0" />
+      <Label layoutX="62.0" layoutY="48.0" text="Session Type" />
+      <DatePicker fx:id="flightDatePicker" layoutX="143.0" layoutY="87.0" />
+      <Label layoutX="67.0" layoutY="91.0" text="Flight Date" />
+      <Label layoutX="66.0" layoutY="138.0" text="Flight Time" />
+      <Label layoutX="62.0" layoutY="182.0" text="Aircraft Type" />
+      <TextField fx:id="flightTimeTextField" layoutX="151.0" layoutY="134.0" />
+      <TextField fx:id="aircraftTypeTextField" layoutX="152.0" layoutY="178.0" />
+      <TextField fx:id="trainingTopicTextField" layoutX="156.0" layoutY="223.0" />
+      <Button layoutX="27.0" layoutY="292.0" mnemonicParsing="false" onAction="#checkAvailabilityOnCLick" text="Check Availability" />
+      <Button layoutX="481.0" layoutY="345.0" mnemonicParsing="false" onAction="#bookSessionOnClick" text="Book a session" />
+      <Label layoutX="67.0" layoutY="227.0" text="Training Topic" />
+      <Label fx:id="availabilityMessageLabel" layoutX="163.0" layoutY="270.0" prefHeight="68.0" prefWidth="427.0" text="availability message" />
+   </children>
+</AnchorPane>

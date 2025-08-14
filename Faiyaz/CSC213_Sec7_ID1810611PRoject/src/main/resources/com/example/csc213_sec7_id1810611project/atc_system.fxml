@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ATCSystemController">
+    <top>
+        <HBox spacing="10" padding="10">
+            <Label text="Air Traffic Control System" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="10" padding="10">
+            <Label text="Login Panel" style="-fx-font-weight: bold;" />
+            <Label text="User Role:" />
+            <ChoiceBox fx:id="roleChoiceBox">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Operation Manager"/>
+                        <String fx:value="ATC Coordinator"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <Label text="User ID:" />
+            <TextField fx:id="userIdField" promptText="Enter ID" />
+            <Button text="Login" onAction="#handleLogin" />
+            <Button text="Logout" onAction="#handleLogout" />
+        </VBox>
+    </left>
+
+    <center>
+        <TabPane fx:id="mainTabPane">
+            <Tab text="Schedule Flights">
+                <VBox spacing="10" padding="10">
+                    <Label text="Flight ID:" />
+                    <TextField fx:id="flightIdField" />
+                    <Label text="Date:" />
+                    <DatePicker fx:id="scheduleDatePicker" />
+                    <Label text="Departure Time:" />
+                    <TextField fx:id="departureTimeField" />
+                    <Label text="Arrival Time:" />
+                    <TextField fx:id="arrivalTimeField" />
+                    <Button text="Schedule Flight" onAction="#handleScheduleFlight" />
+                    <TableView fx:id="scheduleTable">
+                        <columns>
+                            <TableColumn text="Flight ID" />
+                            <TableColumn text="Date" />
+                            <TableColumn text="Departure" />
+                            <TableColumn text="Arrival" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+            <Tab text="Log Flight">
+                <VBox spacing="10" padding="10">
+                    <Label text="Flight ID:" />
+                    <TextField fx:id="logFlightIdField" />
+                    <Label text="Route:" />
+                    <TextField fx:id="routeField" />
+                    <Label text="Remarks:" />
+                    <TextField fx:id="remarksField" />
+                    <Button text="Log Flight" onAction="#handleLogFlight" />
+                    <TableView fx:id="flightLogTable">
+                        <columns>
+                            <TableColumn text="Flight ID" />
+                            <TableColumn text="Route" />
+                            <TableColumn text="Remarks" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+            <Tab text="Coordination Activity">
+                <VBox spacing="10" padding="10">
+                    <Label text="Coordination ID:" />
+                    <TextField fx:id="coordinationIdField" />
+                    <Label text="Involved Flights:" />
+                    <TextField fx:id="involvedFlightsField" />
+                    <Label text="Notes:" />
+                    <TextField fx:id="notesField" />
+                    <Button text="Log Coordination" onAction="#handleCoordinationLog" />
+                    <TableView fx:id="coordinationTable">
+                        <columns>
+                            <TableColumn text="Coordination ID" />
+                            <TableColumn text="Flights" />
+                            <TableColumn text="Notes" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
