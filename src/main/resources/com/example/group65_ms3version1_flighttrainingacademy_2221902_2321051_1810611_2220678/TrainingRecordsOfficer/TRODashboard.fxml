@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.group65_ms3version1_flighttrainingacademy_2221902_2321051_1810611_2220678. Finance_and_Enrollment_Officer.FinanceOfficerDashboard"
+            fx:controller="com.example.group65_ms3version1_flighttrainingacademy_2221902_2321051_1810611_2220678.TrainingRecordsOfficer.TRODashboard"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>

@@ -1,4 +1,0 @@
-package com.example.group65_ms3version1_flighttrainingacademy_2221902_2321051_1810611_2220678.Certified_Examiner;
-
-public class ChiefExaminerDashboard {
-}
