@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cse213_finalproject_group65_flighttrainingacademy.TrainingRecordsOfficer.AddSessionController"
+            prefWidth="560" prefHeight="380">
+
+    <center>
+        <GridPane hgap="10" vgap="10">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+
+            <!-- Row 0 -->
+            <Label text="Date" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="datePicker" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <!-- Row 1 -->
+            <Label text="Type" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="typeCombo" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <!-- Row 2 -->
+            <Label text="Trainee" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="traineeCombo" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <!-- Row 3 -->
+            <Label text="Aircraft/Device" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="aircraftCombo" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <!-- Row 4 -->
+            <Label text="Duration (hrs)" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="durationField" promptText="e.g. 1.5"
+                       GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <!-- Row 5 -->
+            <Label text="Remarks" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextArea fx:id="remarksArea" prefRowCount="3" wrapText="true"
+                      GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <!-- Row 6 -->
+            <HBox spacing="8" GridPane.rowIndex="6" GridPane.columnIndex="1">
+                <Button text="Save" onAction="#onSave"/>
+                <Button text="Clear" onAction="#onClear"/>
+            </HBox>
+        </GridPane>
+    </center>
+</BorderPane>

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>Group65_MS3Version1_FlightTrainingAcademy_2221902_2321051_1810611_2220678</artifactId>
+    <artifactId>CSE213_FinalProject_Group65_FlightTrainingAcademy</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Group65_MS3Version1_FlightTrainingAcademy_2221902_2321051_1810611_2220678</name>
+    <name>CSE213_FinalProject_Group65_FlightTrainingAcademy</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.group65_ms3version1_flighttrainingacademy_2221902_2321051_1810611_2220678/com.example.group65_ms3version1_flighttrainingacademy_2221902_2321051_1810611_2220678.HelloApplication
+                                com.example.cse213_finalproject_group65_flighttrainingacademy/com.example.cse213_finalproject_group65_flighttrainingacademy.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
